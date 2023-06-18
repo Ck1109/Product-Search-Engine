@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+      function storeTableValue(a) {
+
+        var inputValue = document.getElementById("input-value");
+        inputValue.value = a;
+      }
+</script>
+<style>
+.quantity__input {
+  width: 32px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 2px solid #dee0ee;
+  border-bottom: 2px solid #dee0ee;
+  border-left: 1px solid #dee0ee;
+  border-right: 2px solid #dee0ee;
+  background: #fff;
+  color: #8184a1;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8184a1;
+  line-height: 1.3;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+/* a:link, a:visited {
+  transition: color 0.15s ease 0s, border-color 0.15s ease 0s, background-color 0.15s ease 0s;
+} */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+ #Text1 {
+    width: 350px;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 3px;
+    height: 30px;
+        }
+ #Text2 {
+            border-style: outset;
+            border-width: 6px;
+            height: 22px;
+        }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+        .divc
+        {
+            background-color:aqua;
+        }
+        #form1 {
+            height: 413px;
+        }
+        .auto-style1 {
+            background-color: white;
+            text-align: center;
+        }
+.lab {
+  float: left;
+  color: #b6e7ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px
+}
+.topnav {
+  color:#b6e7ff;
+  overflow: hidden;
+  background-color: #052433;
+  font-size:25px;
+
+}
+
+.topnav a {
+  float: right;
+  color: #b6e7ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.lab1 {
+    float: right;
+    color: #b6e7ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.lab2 {
+    float: right;
+    color: #b6e7f;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: 30px;
+}
+.lab2:hover {
+background-color: #b6e7ff;
+color:#052433;
+}
+#Buy1 {
+    color: #b6e7ff;
+    width: 70px;
+    background-color: #052433;
+    height: 45px;
+    border-style: ridge;
+    border-width: 2px;
+    font-weight: 700;
+    border-radius: 18px;
+}
+#logout {
+margin-top:8px;
+margin-right:8px;
+float:right;
+    color: #b6e7ff;
+    width: 70px;
+    background-color: #052433;
+    height: 45px;
+    border-style: ridge;
+    border-width: 2px;
+    font-weight: 700;
+    border-radius: 18px;
+}
+
+.topnav a:hover {
+  background-color: #b6e7ff;
+  color: #052433;
+}
+        }
+        .auto-style1 {
+            background-color: white;
+            text-align: center;
+        }
+.anch:hover {
+background-color:#b6e7ff;
+color: #052433;
+}
+.productclass {
+    width: 100px;
+    height: auto;
+}
+    .auto-style4 {
+        background-color: white;
+        height: fit-content;
+        width: 1372px;
+        margin-top: 45px;
+        box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    }
+    .auto-style5 {
+        width: 100%;
+        height: 197px;
+    }
+.auto-style6 {
+    width: 260px;
+    height: 191px;
+}
+    .auto-style7 {
+        width: 189px;
+
+    }
+    .auto-style8 {
+        width: 100%;
+        height: 168px;
+    }
+    .auto-style9 {
+        height: 27px;
+    }
+    .auto-style10 {
+        height: 25px;
+    }
+
+  .btn {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: buttonface;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  }
+
+.btn:hover {
+  background-color: #052433;
+      box-shadow: 0px 15px 20px rgba(5, 36, 51, 0.73);
+  color: #b6e7ff;
+  transform: translateY(7px);
+}
+
+
+
+
+
+</style>
+</head>
+<body class="bo">
+
+<div class="topnav">
+<label class="lab">CodeTech</label>
+    <a href="{{url_for('logout')}}" class="anch"><label class="lab2">Logout</label></a>
+    {% if session.name %}
+<label class="lab1">{{session.name}}</label>
+     {% endif %}
+
+
+</div>
+
+<!--<div style="padding-left:16px"> -->
+    <form  method="POST">&nbsp&nbsp&nbsp<!--action="{{url_for('func')}}"--><!--
+<input id="logout" name="logout" type='submit' value="logout" onclick="logout()"/>--></td>
+   <!--     <a href="{{url_for('logout')}}"><b>Logout</b></a>-->
+ <!--       <div style="height: 151px">-->  </div>&nbsp&nbsp&nbsp
+        <div style=" height: 200px; width: 322px; margin-left: 500px;" class="auto-style1">
+            &nbsp;&nbsp;&nbsp;<br />
+            <br />
+            &nbsp;&nbsp;
+            <input id="Text1" name="searchfor" type="text" placeholder="Whats in you mind!!!" /><br /><br /><br /><br />
+            &nbsp;&nbsp;
+
+            &nbsp;
+            <input id="Button1" name="Button" type='submit' onclick="funct()" value="Search" class="btn"></div>
+
+
+<!--</div>-->
+<div><a href={{urlf}} style="color:black;" ><b>Also search for {{predict}} </b></a></div>
+<!--{% for table in tables %}
+<h2>{{titles[loop.index]}}</h2>
+            {{ table|safe }}
+{% endfor %}-->
+<!--
+<table>
+    <thead>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+        <th>Image</th>
+    </thead>
+    <tbody>
+        {% for table in tables %}
+            <tr>
+                <td>
+                    <a href="{{ table.Link }}">{{ table.Name }}</a>
+                </td>
+                <td>
+                    {{ table.Cost }}
+                </td>
+                <td>
+                    <img src="https://rukminim1.flixcart.com/image/580/696/kt39jm80/t-shirt/g/t/8/xl-camouflage-leana-original-imag6gkwudwkqxhc.jpeg?q=50" class="productclass"/>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+-->
+
+{% for table in tables %}
+  <div class="auto-style4">
+{% if prodname %}
+      {{prodname}}
+      {% endif %}
+
+        <table class="auto-style5">
+            <tr>
+                <td class="auto-style7"><img src='{{ table.Imgurl }}' alt='' class="auto-style6"></td>
+                <td>
+                    <table class="auto-style8">
+                        <tr>
+                            <td class="auto-style10"><span style="color: rgb(33, 33, 33); font-family: monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+                                <h3 id="table-value"><a href='{{ table.Link }}' style="color: black;" >{{ table.Name }}</a></h3>
+                            </span></td>
+
+                        </tr>
+                        <tr>
+                            <td class="auto-style9">{{table.Cost}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="Buy1"  name="Buy" type='submit' value="Buy" class="btn" onclick="storeTableValue('{{ table.Name }}')"/></td>
+                          <td>                                <div class="quantity">
+
+    <input name="quantity" type="number"  class="quantity__input" value=0 required>
+
+  </div></td>
+
+
+
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+{% endfor %}
+
+
+<input type="hidden" id="input-value" name="input_value">
+
+
+ </form>
+
+</body>
+</html>
